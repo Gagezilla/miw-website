@@ -1,3 +1,7 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
+<script>
+    import Page from "./comps/Page.svelte";
+</script>
+
+<Page>
+    sup bra
+</Page>
