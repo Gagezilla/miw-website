@@ -21,7 +21,7 @@
             then you should consider having Monarch Iron Works assist
             you in its design and construction.
             <br><br>
-            Monarch Iron Works employs over 30 master metal fabricators
+            Monarch Ironworks employs over 30 master metal fabricators
             all of whom have more than a decade of experience crafting
             wrought iron.
             <br><br>
