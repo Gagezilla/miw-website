@@ -1,4 +1,4 @@
-<footer class="bg-clr2 font-poppins text-center py-10">
+<footer class="bg-clr2 font-poppins text-center pb-10 pt-3">
     <span class="block mx-auto font-semibold text-[1.85rem] translate-y-[1.5rem]">Monarch</span>
     <img class="mx-auto w-[10rem]" src="/pages/logo.png" alt="">
     <span class="block mx-auto font-semibold text-[1.5rem] translate-y-[-1.5rem]">Ironworks</span>
