@@ -7,7 +7,7 @@
     <div class="relative h-[18.75rem] md:h-[35rem]">
         <img class="relative object-cover w-full h-full" src="/pages/home/front.png" alt="">
         <div class="top-0 w-full h-full absolute bg-clr1/50"></div>
-        <h1 class="md:text-[3rem] md:top-[43.5%] w-full text-center absolute top-[40%] font-poppins font-bold text-[2rem] text-clr2">We build your Gates,<br>Railings and Fences</h1>
+        <h1 class="md:text-[3rem] md:top-[43.5%] w-full text-center absolute top-[50%] translate-y-[-50%] md:translate-y-0 font-poppins font-bold text-[2rem] text-clr2">We build your Gates,<br>Railings and Fences</h1>
     </div>
     <Section title="Details Matter" type="light" class="text-[2rem]">
         <p class="font-poppins px-8 py-14 text-center text-[.9rem] max-w-[50rem] md:text-[1rem] md:mx-auto">
@@ -91,6 +91,7 @@
             <div class="text-right text-[5rem] h-[3rem]">"</div>
         </div>
     </Section>
+    <div id="contact-us"></div>
     <Section title="Have a project in mind? Let’s make it happen!" type="dark" class="text-[1.5rem] md:text-[2rem]">
         <form on:submit|preventDefault={()=>{}} method="post" class="flex flex-col gap-6 pt-14 px-10 mx-auto max-w-[50rem] font-poppins text-clr4">
             <div class="flex flex-col md:flex-row gap-6">
