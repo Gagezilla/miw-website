@@ -3,7 +3,7 @@
     export let description;
 
     const url = "https://monarchironworks.com/"
-    const newTitle = "MIW - " + title
+    const newTitle = "Monarch Ironworks | " + title
 </script>
 
 <svelte:head>
