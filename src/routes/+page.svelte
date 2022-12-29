@@ -1,5 +1,5 @@
 <script>
-    import Page from "./comps/Page.svelte";
+    import Page from "./COMPS/Page.svelte";
 </script>
 
 <Page>
