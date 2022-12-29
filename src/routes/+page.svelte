@@ -11,12 +11,25 @@
     </div>
     <Section title="Details Matter" type="light" class="text-[2rem]">
         <p class="font-poppins px-8 py-14 text-center text-[.9rem] max-w-[50rem] md:text-[1rem] md:mx-auto">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate
-            non provident, similique sunt in culpa qui officia deserunt
-            mollitia animi, id est laborum et dolorum fuga. Et harum
-            quidem rerum facilis est et expedita distinctio.
+            Our gates, railings, balconies, and fences are made of the
+            finest wrought iron. Not only are our finished products
+            truly beautiful, but all of them will be hand-crafted to
+            meet your specific requirements.
+            <br><br>
+            If you need a truly one-of-a-kind custom gate, railing,
+            balcony, or fence for your residence or place of business
+            then you should consider having Monarch Iron Works assist
+            you in its design and construction.
+            <br><br>
+            Monarch Iron Works employs over 30 master metal fabricators
+            all of whom have more than a decade of experience crafting
+            wrought iron.
+            <br><br>
+            Please feel free to select any of our designs or submit your
+            own design and we will provide you with an estimate. If you
+            then decide to proceed, we will send you a CAD drawing of that
+            design for you to review, make changes if needed, or approve
+            for production.
         </p>
         <div class="h-[10rem] md:h-[15rem] flex justify-center overflow-x-hidden">
             <div class="flex justify-center gap-6">
