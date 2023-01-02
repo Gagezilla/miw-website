@@ -9,5 +9,5 @@
         description="super nice gates"
         headline="Gates"
         image="/pages/gates/front.jpg"
-        imageLinks={data.imageLinks}
+        imageDatas={data.imageDatas}
 />

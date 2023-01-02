@@ -5,7 +5,7 @@
     export let description;
     export let headline;
     export let image;
-    export let imageLinks;
+    export let imageDatas;
 </script>
 
 <Page {title} {description}>
@@ -16,17 +16,16 @@
     </div>
     <slot/>
     <div class="flex flex-wrap justify-center py-10 w-[80rem] mx-auto gap-10">
-        {#each imageLinks as url}
-            <a href="/" class="w-[25rem] h-[20rem] rounded-2xl overflow-hidden transition-colors border-transparent hover:border-clr2 border-[3px] relative">
-                <img class="w-full h-full object-cover p-1 rounded-2xl" src={url} alt="">
-                <div class="absolute w-full h-full top-0 flex flex-col">
-                    <div class="h-full border-t-[.25rem] border-x-[.25rem] border-clr2/50 rounded-t-2xl">
-
-                    </div>
-                    <div class="bg-clr2/50 font-poppins text-clr3 font-semibold text-[1.1rem] py-2 text-center">
-                        Gate EL1001
-                    </div>
+        {#each imageDatas as data, i}
+            <a class="w-[25rem] relative rounded-2xl group">
+                <div class="w-full h-[20rem] rounded-3xl overflow-hidden border-2 border-clr4 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src={data.link} alt="">
+                    <div class="absolute w-full h-full top-0 transition-colors duration-300 group-hover:group-hover:group-hover:group-hover:bg-clr3/40"></div>
                 </div>
+                <div class="w-full font-poppins text-clr2 font-semibold text-[1.3rem] py-2 text-center">
+                    {data.sku}
+                </div>
+                <div class="w-14 mx-auto border-t-2 border-clr4"></div>
             </a>
         {/each}
     </div>

@@ -24,7 +24,7 @@
         md:border-0
         border-2
         border-clr4
-        md:gap-4
+        md:gap-6
         md:static
         md:flex
         md:text-clr2
@@ -43,9 +43,8 @@
         text-center
         text-[1.1rem]">
             <li><a class="block p-2 md:p-4" href="/">Home</a></li>
-            <li><a class="block p-2 md:p-4" href="/gates">Gates</a></li>
             <li><a class="block p-2 md:p-4" href="/railings">Railings</a></li>
-            <li><a class="block p-2 md:p-4" href="/railings">Balconies</a></li>
+            <li><a class="block p-2 md:p-4" href="/gates">Gates</a></li>
             <li><a class="block p-2 md:p-4" href="/fences">Fences</a></li>
             <li><a class="block p-2 md:p-4 border-clr2 md:border-2 md:rounded-xl duration-200 md:hover:bg-clr2 md:hover:text-clr3" href="">Contact Us</a></li>
         </ul>
