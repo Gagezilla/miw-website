@@ -47,8 +47,7 @@
             <li><a class="block p-2 md:p-4" href="/railings">Railings</a></li>
             <li><a class="block p-2 md:p-4" href="/railings">Balconies</a></li>
             <li><a class="block p-2 md:p-4" href="/fences">Fences</a></li>
-            <li><a class="block p-2 md:p-4" href="/about-us">About Us</a></li>
-            <li><a class="block p-2 md:p-4 md:border-2 md:rounded-xl" href="">Contact Us</a></li>
+            <li><a class="block p-2 md:p-4 border-clr2 md:border-2 md:rounded-xl duration-200 md:hover:bg-clr2 md:hover:text-clr3" href="">Contact Us</a></li>
         </ul>
     </div>
 </header>
