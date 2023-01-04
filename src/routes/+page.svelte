@@ -3,11 +3,13 @@
     import Section from "./1/Section.svelte";
 </script>
 
-<Page title="Home" description="super good home page for monarch iron works">
+<Page seoTitle="Home" seoDescription="super good home page for monarch iron works">
     <div class="relative h-[18.75rem] md:h-[35rem]">
         <img class="relative object-cover w-full h-full" src="/pages/home/front.png" alt="">
         <div class="top-0 w-full h-full absolute bg-clr1/50"></div>
-        <h1 class="md:text-[3rem] md:top-[43.5%] w-full text-center absolute top-[50%] translate-y-[-50%] md:translate-y-0 font-poppins font-bold text-[2rem] text-clr2">We build your Gates,<br>Railings and Fences</h1>
+        <h1 class="md:text-[4rem] md:top-[40%] w-full text-center absolute top-[50%] translate-y-[-50%] md:translate-y-0 font-poppins font-bold text-[2.5rem] text-clr2">
+            You dream it,<br>We build it
+        </h1>
     </div>
     <Section title="Details Matter" type="light" class="text-[2rem]">
         <p class="font-poppins px-8 py-14 text-center text-[.9rem] max-w-[50rem] md:text-[1rem] md:mx-auto">
@@ -16,9 +18,9 @@
             truly beautiful, but all of them will be hand-crafted to
             meet your specific requirements.
             <br><br>
-            If you need a truly one-of-a-kind custom gate, railing,
+            If you need a truly "one-of-a-kind" custom gate, railing,
             balcony, or fence for your residence or place of business
-            then you should consider having Monarch Iron Works assist
+            then you should consider having Monarch Ironworks assist
             you in its design and construction.
             <br><br>
             Monarch Ironworks employs over 30 master metal fabricators
@@ -39,11 +41,11 @@
             </div>
         </div>
     </Section>
-    <Section title="Our Services" type="dark" class="text-[2rem]">
+    <Section title="Custom Products" type="dark" class="text-[2rem]">
         <div class="flex flex-col md:flex-row justify-center items-center pt-20 gap-16 px-12">
             <div class="text-center max-w-[26rem] flex flex-col gap-8 items-center font-poppins">
                 <img class="w-[9rem] h-[9rem]" src="/pages/home/gate.svg" alt="">
-                <h3 class="text-[1.7rem] font-semibold">Gate Making</h3>
+                <h3 class="text-[1.7rem] font-semibold">Custom Gates</h3>
                 <p class="text-clr5 text-[.9rem] md:text-[1rem] md:mx-auto">
                     At vero eos et accusamus et iusto odio dignissimos
                     ducimus qui blanditiis praesentium voluptatum
@@ -52,7 +54,7 @@
             </div>
             <div class="text-center max-w-[26rem] flex flex-col gap-8 items-center font-poppins">
                 <img class="w-[9rem] h-[9rem]" src="/pages/home/fence.svg" alt="">
-                <h3 class="text-[1.7rem] font-semibold">Artistic Fences</h3>
+                <h3 class="text-[1.7rem] font-semibold">Custom Fences</h3>
                 <p class="text-clr5 text-[.9rem] md:text-[1rem] md:mx-auto">
                     At vero eos et accusamus et iusto odio dignissimos
                     ducimus qui blanditiis praesentium voluptatum
@@ -92,7 +94,7 @@
         </div>
     </Section>
     <div id="contact-us"></div>
-    <Section title="Have a project in mind? Let’s make it happen!" type="dark" class="text-[1.5rem] md:text-[2rem]">
+    <Section title="Have a project in mind? How can we help?" type="dark" class="text-[1.5rem] md:text-[2rem]">
         <form on:submit|preventDefault={()=>{}} method="post" class="flex flex-col gap-6 pt-14 px-10 mx-auto max-w-[50rem] font-poppins text-clr4">
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="flex flex-col gap-2 w-full">

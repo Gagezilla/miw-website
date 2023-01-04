@@ -1,4 +1,5 @@
-import google from '@googleapis/drive';
+import { error } from '@sveltejs/kit';
+import google from "@googleapis/drive";
 
 const creds = {
     "type": "service_account",
@@ -24,21 +25,74 @@ const auth = new google.auth.JWT(
 
 const drive = google.drive({version: 'v2', auth});
 
-/** @type {import('./$types').RequestHandler} */
-export async function POST({ url }) {
-    const driveId = url.searchParams.get('driveId')
+const categories = {
+    "gates": {
+        "seoTitle": "Gates",
+        "seoDescription": "super nice gates",
+        "title": "Gates",
+        "image": "/pages/product-categories/gates.jpg",
+        "folders": [
+            {"name": "default", "id": "1uXO26n1IdZZ4u3TxVmzRwkwN8vuiPxcf"}
+        ]
+    },
+    "fences": {
+        "seoTitle": "Fences",
+        "seoDescription": "super nice fences",
+        "title": "Fences",
+        "image": "/pages/product-categories/fences.jpg",
+        "folders": [
+            {"name": "default", "id": "12kuCMUOAvPV4NFKziK6sJfxIqZ9TeWbt"}
+        ]
+    },
+    "railings": {
+        "seoTitle": "Railings",
+        "seoDescription": "super nice railings",
+        "title": "Railings",
+        "image": "/pages/product-categories/railings.jpg",
+        "folders": [
+            {"name": "Interior", "id": "1dE3jicsqv4KbpEjojozjXeiKHyTYFy9-"},
+            {"name": "Exterior", "id": "1GLJtnnVVQ4n80WhXR0FVr3xdxXxEsd-9"},
+            {"name": "Balcony", "id": "14TjG-3v0bWtOIMFjV27NDF2gAS6lg2eM"}
+        ]
+    }
+}
 
-    const files = await drive.files.list({
-        q: `'${driveId}' in parents`,
-        supportsAllDrives: true
-    })
+/** @type {import('./$types').PageServerLoad} */
+export async function load({ params }) {
 
-    const imageDatas = files.data.items.map(i => {
-        return {
-            link: `https://drive.google.com/uc?id=${i.id}&export=media`,
-            sku: i.title.split(".")[0]
-        }
-    })
+    if (!Object.keys(categories).includes(params.slug))
+        throw error(404, 'Not found');
 
-    return new Response(JSON.stringify(imageDatas));
+    const categoryData = categories[params.slug]
+
+    let category = Object.assign({
+        "subcategories": await getSubcategories(categoryData["folders"])
+    }, categoryData)
+
+    delete category.folders
+
+    return category
+}
+
+async function getSubcategories(folders) {
+
+    let subcategories = [];
+
+    for (let folder of folders) {
+
+        const products = (await drive.files.list({
+            q: `'${folder.id}' in parents`,
+            supportsAllDrives: true
+        })).data.items.map(i => {
+            return {
+                link: `https://drive.google.com/uc?id=${i.id}&export=media`,
+                sku: i.title.split(".")[0]
+            }
+        })
+
+        subcategories.push({"name": folder.name, "products": products})
+
+    }
+
+    return subcategories;
 }

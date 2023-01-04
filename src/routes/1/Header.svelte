@@ -42,11 +42,11 @@
         font-poppins
         text-center
         text-[1.1rem]">
-            <li><a class="block p-2 md:p-4" href="/">Home</a></li>
-            <li><a class="block p-2 md:p-4" href="/railings">Railings</a></li>
-            <li><a class="block p-2 md:p-4" href="/gates">Gates</a></li>
-            <li><a class="block p-2 md:p-4" href="/fences">Fences</a></li>
-            <li><a class="block p-2 md:p-4 border-clr2 md:border-2 md:rounded-xl duration-200 md:hover:bg-clr2 md:hover:text-clr3" href="">Contact Us</a></li>
+            <li><a class="block p-2 md:p-4 transition-colors duration-200 hover:text-clr2/60" href="/">Home</a></li>
+            <li><a class="block p-2 md:p-4 transition-colors duration-200 hover:text-clr2/60" href="/product-categories/railings">Railings</a></li>
+            <li><a class="block p-2 md:p-4 transition-colors duration-200 hover:text-clr2/60" href="/product-categories/gates">Gates</a></li>
+            <li><a class="block p-2 md:p-4 transition-colors duration-200 hover:text-clr2/60" href="/product-categories/fences">Fences</a></li>
+            <li><a class="block p-2 md:p-4 transition-colors duration-200 border-clr2 md:border-2 md:rounded-xl md:hover:bg-clr2 md:hover:text-clr3" href="#/">Contact Us</a></li>
         </ul>
     </div>
 </header>
