@@ -71,7 +71,7 @@ async function getSubcategories(folders) {
 
         const products = results.map(r => {
             return {
-                link: r.url,
+                link: r.url+"?tr=w-396,h-316",
                 sku: r.name.split(".")[0]
             }
         })
