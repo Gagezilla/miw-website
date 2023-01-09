@@ -39,26 +39,18 @@ const categories = {
     }
 }
 
-let cachedData
-
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
 
-    if (cachedData === undefined) {
-        cachedData = {}
-        for (const c of Object.keys(categories)) {
-            cachedData[c] = Object.assign({}, categories[c])
-            cachedData[c]["subcategories"] = await getSubcategories(cachedData[c]["folders"])
-            delete cachedData[c]["folders"]
-        }
-    }
+    let cc = categories[params.slug]
 
-    const cat = cachedData[params.slug]
+    if (!cc) throw error(404, 'Not found');
 
-    if (cat === undefined)
-        throw error(404, 'Not found');
+    let catData = Object.assign({}, cc)
+    catData["subcategories"] = await getSubcategories(catData["folders"])
+    delete catData["folders"]
 
-    return cat
+    return catData
 }
 
 async function getSubcategories(folders) {

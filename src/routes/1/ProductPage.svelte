@@ -7,7 +7,7 @@
 
     function getSubIndex() {
         const urlSc = $page.url.searchParams.get('sc')
-        const foundSc = data.subcategories.findIndex(sc => sc.name === urlSc)
+        const foundSc = data["subcategories"].findIndex(sc => sc.name === urlSc)
         return foundSc === -1 ? 0 : foundSc
     }
 
@@ -31,13 +31,13 @@
         </div>
     {/if}
     {#key subIndex}
-        <div class="flex flex-wrap justify-center py-10 w-[80rem] mx-auto gap-10"
+        <div class="flex flex-wrap justify-center py-10 w-[25rem] lg:w-[52.5rem] xl:w-[80rem] mx-auto gap-10"
              in:fly|local="{{ x: 25, duration: 500, delay: 500 }}"
              out:fly|local="{{ x: -25, duration: 500 }}">
             {#each data.subcategories[subIndex]["products"] as product}
                 <a href="#/" class="w-[25rem] relative rounded-2xl group">
                     <div class="w-full h-[20rem] rounded-3xl overflow-hidden border-2 border-clr4 relative">
-                        <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src={product.link} alt="">
+                        <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src={product.link} loading="lazy" alt="">
                         <div class="absolute w-full h-full top-0 transition-colors duration-300 group-hover:group-hover:group-hover:group-hover:bg-clr3/40"></div>
                     </div>
                     <div class="w-full font-poppins text-clr2 font-semibold text-[1.3rem] py-2 text-center">
