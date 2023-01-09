@@ -4,10 +4,10 @@
 </script>
 
 <Page seoTitle="Home" seoDescription="super good home page for monarch iron works">
-    <div class="relative h-[18.75rem] md:h-[35rem]">
+    <div class="relative h-[25rem] md:h-[35rem]">
         <img class="relative object-cover w-full h-full" src="/pages/home/front.png" alt="">
-        <div class="top-0 w-full h-full absolute bg-clr1/50"></div>
-        <h1 class="md:text-[4rem] md:top-[40%] w-full text-center absolute top-[50%] translate-y-[-50%] md:translate-y-0 font-poppins font-bold text-[2.5rem] text-clr2">
+        <div class="top-0 w-full h-full absolute bg-clr1/40"></div>
+        <h1 class="md:text-[4rem] top-[44%] w-full text-center absolute font-poppins font-bold text-[3rem] text-clr2">
             You Dream It,<br>We Build It
         </h1>
     </div>
