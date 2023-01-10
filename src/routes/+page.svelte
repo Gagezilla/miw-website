@@ -72,27 +72,42 @@
             </div>
         </div>
     </Section>
-    <Section title="What they say about us" type="light" class="text-[2rem]">
+    <Section title="Our design process" type="light" class="text-[2rem]">
         <div class="px-8 font-poppins mx-auto max-w-[40rem]">
-            <div class="mt-16 mb-2 flex items-center h-[4rem] gap-6">
-                <img class="rounded-full h-full border-2 border-clr1" src="/pages/home/avatar.png" alt="">
-                <div class="flex flex-col">
-                    <span class="font-bold text-[1.4rem]">Darren JONES</span>
-                    <span class="text-[1.4rem] text-clr5">Windsor, CO</span>
-                </div>
-            </div>
-            <div class="text-[5rem] h-[4rem]">"</div>
-            <p class="text-clr5 text-[.9rem] md:text-[1rem] text-center">
-                Et harum quidem rerum facilis est et expedita distinctio.
-                Nam libero tempore, cum soluta nobis est eligendi optio
-                cumque nihil impedit quo minus id quod maxime placeat
-                facere possimus, omnis voluptas assumenda est, omnis
-                dolor repellendus. Temporibus autem quibusdam et aut
-                officiis debitis aut rerum necessitatibus saepe.
+            <p class="mt-16 text-clr5 text-[.9rem] md:text-[1rem] text-center">
+                Whether you’re an architect, designer, builder, or a property owner searching for
+                that perfect, attention-grabbing design to enhance and complete a project you’re
+                working on that requires railings, gates fences or other, Monarch Ironworks is the
+                company you can rely upon to provide stunning hand-crafted ironworks for the
+                ages.
+                <br><br>
+                The product designs can be either simple and classical or extremely complex and
+                sophisticated. We will work with you and your team to create any design of any
+                size and number you require – interior or exterior.
             </p>
-            <div class="text-right text-[5rem] h-[3rem]">"</div>
         </div>
     </Section>
+<!--    <Section title="What they say about us" type="light" class="text-[2rem]">-->
+<!--        <div class="px-8 font-poppins mx-auto max-w-[40rem]">-->
+<!--            <div class="mt-16 mb-2 flex items-center h-[4rem] gap-6">-->
+<!--                <img class="rounded-full h-full border-2 border-clr1" src="/pages/home/avatar.png" alt="">-->
+<!--                <div class="flex flex-col">-->
+<!--                    <span class="font-bold text-[1.4rem]">Darren JONES</span>-->
+<!--                    <span class="text-[1.4rem] text-clr5">Windsor, CO</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="text-[5rem] h-[4rem]">"</div>-->
+<!--            <p class="text-clr5 text-[.9rem] md:text-[1rem] text-center">-->
+<!--                Et harum quidem rerum facilis est et expedita distinctio.-->
+<!--                Nam libero tempore, cum soluta nobis est eligendi optio-->
+<!--                cumque nihil impedit quo minus id quod maxime placeat-->
+<!--                facere possimus, omnis voluptas assumenda est, omnis-->
+<!--                dolor repellendus. Temporibus autem quibusdam et aut-->
+<!--                officiis debitis aut rerum necessitatibus saepe.-->
+<!--            </p>-->
+<!--            <div class="text-right text-[5rem] h-[3rem]">"</div>-->
+<!--        </div>-->
+<!--    </Section>-->
     <div id="contact-us"></div>
     <Section title="Have a project in mind? How can we help?" type="dark" class="text-[1.5rem] md:text-[2rem]">
         <form on:submit|preventDefault={()=>{}} method="post" class="flex flex-col gap-6 pt-14 px-10 mx-auto max-w-[50rem] font-poppins text-clr4">
